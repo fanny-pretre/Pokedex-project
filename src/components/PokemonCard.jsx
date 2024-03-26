@@ -10,8 +10,10 @@ const pokemonList = [
   ];
 
 
-function PokemonCard() {
-    const pokemon = pokemonList[1]; 
+function PokemonCard({index}) {
+
+    const pokemon = pokemonList[index];
+    
     return <figure className="card">
         {pokemon.imgSrc === undefined ? <p> "???" </p> : <img src= {pokemon.imgSrc} className="card-img" alt={pokemon.name}/>}
         <figcaption> {pokemon.name} </figcaption>
