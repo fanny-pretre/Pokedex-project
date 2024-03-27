@@ -1,3 +1,7 @@
+.center {
+  display: flex;
+  flex-direction: column;
+}
 .card {
   width: 200px;
   padding: 1rem;
